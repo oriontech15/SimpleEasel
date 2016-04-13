@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EnF-ke-5CQ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Easel View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EaselViewController" customModule="Easel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,447 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hkb-dm-g8Q">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDq-NU-GJX">
+                                <rect key="frame" x="0.0" y="542" width="600" height="290"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="sAy-os-EiR">
+                                        <rect key="frame" x="15" y="240" width="570" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1H-Jc-pYf" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.69796449230000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="copper"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="clM-sb-mPu"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YOm-Y2-VHy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdf-QA-RW0" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="106" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.1647058824" green="0.98823529409999999" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="lightGreen"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="gnc-dT-r9j"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Jb-T7-uxw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMc-7V-dDY" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="212" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.0" green="0.98994848010000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="lightBlue"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Jso-3R-hNq"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJV-XP-Ehs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRW-Ac-5sG" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="318" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.67482744189999999" green="0.42534194530000002" blue="0.91928582700000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="lightPurple"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="6J3-Pr-2Tn"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjs-dH-sBV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adC-ke-ztR" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="424" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.65832647550000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="pink"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="jq3-1x-rrE"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R0E-Mv-d7v"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6K-OT-aBh" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="530" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="white"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="cDS-vX-0wc"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57q-92-qIn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="IH5-MT-i2A"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="mLj-aq-uka">
+                                        <rect key="frame" x="15" y="192" width="570" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD1-jy-3Yo" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.93333333330000001" green="0.1647058824" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="lightRed"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="WTc-df-XAz"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bBR-OH-y0b"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oM-6w-263" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="106" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.99215686270000003" green="0.89411764709999997" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="qPT-hw-hLb"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFd-VZ-Rss"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJL-T2-RCZ" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="212" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.066666666669999999" green="0.77519835059999997" blue="0.19407364669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="green"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="6IU-g8-hjn"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uDD-LT-WPV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJB-NR-QdB" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="318" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.0" green="0.27671447570000002" blue="0.80459265489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="blue"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="eNP-FC-Wft"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vu9-d2-8Kc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbU-uW-eGA" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="424" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.91928582700000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="lightPink"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="YI1-Pv-5uG"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2vZ-W5-tgA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pxw-F4-ZZO" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="530" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="black"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="fJI-Fq-82g"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAa-OF-qDm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="P9K-Bf-qI7"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="trx-00-NiM"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="trx-00-NiM"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="748-51-Mnd">
+                                        <rect key="frame" x="15" y="144" width="570" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pom-Mx-DFF" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="OQO-l6-YHf"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CXv-yp-2Fu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDp-qJ-jrU" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="106" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.47866832970000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="orange"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="KQ7-5E-XQf"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jk6-tJ-hkE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCi-Fd-K5a" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="212" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.0" green="0.98823529409999999" blue="0.12737592380000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="limeGreen"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="oNG-vX-zlB"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QdS-mo-dd4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgb-qb-zfs" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="318" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.12941176469999999" green="0.7725490196" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="babyBlue"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="IJS-u5-kLe"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJb-wL-Iku"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dar-Zy-v7a" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="424" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.52298003640000001" green="0.0" blue="0.80459265489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="purple"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="SFr-TB-Mlf"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sEg-ex-cR9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrj-0D-aJD" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="530" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.61266384880000002" green="0.29362177049999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="brown"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Ooc-uU-PLl"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jvp-6z-KJs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="2y0-xp-gj4"/>
+                                            <constraint firstAttribute="height" constant="40" id="fxH-p7-xDo"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="2y0-xp-gj4"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" minValue="1" maxValue="40" translatesAutoresizingMaskIntoConstraints="NO" id="sod-ct-fW3">
+                                        <rect key="frame" x="13" y="100" width="489" height="33"/>
+                                        <color key="minimumTrackTintColor" red="0.10980392160000001" green="0.81176470590000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="maximumTrackTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qpW-hH-v3P"/>
+                                        </connections>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="cxe-m1-VCA">
+                                        <rect key="frame" x="60" y="10" width="480" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDG-Dp-jSy" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="gne-9D-fQe"/>
+                                                </constraints>
+                                                <state key="normal" title="U">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="undoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpo-jZ-z9G"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRQ-uY-B1C" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="110" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="gAA-Lm-duk"/>
+                                                </constraints>
+                                                <state key="normal" title="S">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="shareButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Svt-vc-LhI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r9-KP-8AL" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="220" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="fxO-FB-VOg"/>
+                                                </constraints>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iii-Kg-Lw8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ph1-Pf-0fO" customClass="EraseCustomButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="330" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="white"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="xPM-tG-U1m"/>
+                                                </constraints>
+                                                <state key="normal" title="E">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vYm-Ha-Tqc"/>
+                                                    <action selector="eraseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="saI-ZR-3jb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZS-dx-Irr" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                                <rect key="frame" x="440" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="s75-l0-mZB"/>
+                                                </constraints>
+                                                <state key="normal" image="Slice 1"/>
+                                                <connections>
+                                                    <action selector="settingsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVW-ai-HJS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="ORO-mg-xfP"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="cmE-ZF-uh3"/>
+                                            <constraint firstAttribute="height" constant="40" id="oUx-Hw-mC1"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ORO-mg-xfP"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dYE-Tu-fZQ">
+                                        <rect key="frame" x="525" y="96" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="ATN-uR-R3W"/>
+                                            <constraint firstAttribute="height" constant="40" id="QhE-hB-Gjx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1Y-1n-yOp" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="58" width="540" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="EWx-ft-UJl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Erase All">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="eraseAllButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ge-nH-yPL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mLj-aq-uka" firstAttribute="leading" secondItem="vDq-NU-GJX" secondAttribute="leading" constant="15" id="3XX-bi-0e1"/>
+                                    <constraint firstItem="cxe-m1-VCA" firstAttribute="leading" secondItem="vDq-NU-GJX" secondAttribute="leading" constant="60" id="6mM-k8-QVE"/>
+                                    <constraint firstAttribute="trailing" secondItem="x1Y-1n-yOp" secondAttribute="trailing" constant="30" id="H3k-ut-o80"/>
+                                    <constraint firstItem="x1Y-1n-yOp" firstAttribute="top" secondItem="cxe-m1-VCA" secondAttribute="bottom" constant="8" id="IeX-Wj-h9h"/>
+                                    <constraint firstAttribute="bottom" secondItem="sAy-os-EiR" secondAttribute="bottom" constant="10" id="KGG-bM-S0F"/>
+                                    <constraint firstItem="mLj-aq-uka" firstAttribute="top" secondItem="748-51-Mnd" secondAttribute="bottom" constant="8" id="MBK-Fo-ShT"/>
+                                    <constraint firstItem="sod-ct-fW3" firstAttribute="leading" secondItem="vDq-NU-GJX" secondAttribute="leading" constant="15" id="PjC-5q-1fl"/>
+                                    <constraint firstAttribute="trailing" secondItem="mLj-aq-uka" secondAttribute="trailing" constant="15" id="SAn-w9-cvN"/>
+                                    <constraint firstItem="cxe-m1-VCA" firstAttribute="top" secondItem="vDq-NU-GJX" secondAttribute="top" constant="10" id="Ua8-0F-xad"/>
+                                    <constraint firstItem="748-51-Mnd" firstAttribute="top" secondItem="dYE-Tu-fZQ" secondAttribute="bottom" constant="8" id="XT1-6O-uWZ"/>
+                                    <constraint firstAttribute="height" constant="290" id="Y7V-Zc-MMP"/>
+                                    <constraint firstItem="x1Y-1n-yOp" firstAttribute="leading" secondItem="vDq-NU-GJX" secondAttribute="leading" constant="30" id="YEW-sr-Hsf"/>
+                                    <constraint firstItem="sod-ct-fW3" firstAttribute="top" secondItem="x1Y-1n-yOp" secondAttribute="bottom" constant="12" id="gpX-Cr-ucM"/>
+                                    <constraint firstItem="dYE-Tu-fZQ" firstAttribute="leading" secondItem="sod-ct-fW3" secondAttribute="trailing" constant="25" id="iMW-o8-FMD"/>
+                                    <constraint firstAttribute="trailing" secondItem="748-51-Mnd" secondAttribute="trailing" constant="15" id="nKY-fb-cpX"/>
+                                    <constraint firstAttribute="trailing" secondItem="dYE-Tu-fZQ" secondAttribute="trailing" constant="35" id="nlt-dC-wFv"/>
+                                    <constraint firstItem="sAy-os-EiR" firstAttribute="leading" secondItem="vDq-NU-GJX" secondAttribute="leading" constant="15" id="pMX-5M-t4Z"/>
+                                    <constraint firstItem="sAy-os-EiR" firstAttribute="top" secondItem="mLj-aq-uka" secondAttribute="bottom" constant="8" id="pqq-mx-LIa"/>
+                                    <constraint firstAttribute="trailing" secondItem="cxe-m1-VCA" secondAttribute="trailing" constant="60" id="wBn-CU-UD8"/>
+                                    <constraint firstAttribute="trailing" secondItem="sAy-os-EiR" secondAttribute="trailing" constant="15" id="xuV-zT-M2F"/>
+                                    <constraint firstItem="748-51-Mnd" firstAttribute="top" secondItem="sod-ct-fW3" secondAttribute="bottom" constant="12" id="y2F-i5-kKB"/>
+                                    <constraint firstItem="748-51-Mnd" firstAttribute="leading" secondItem="vDq-NU-GJX" secondAttribute="leading" constant="15" id="ywz-hB-lyz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hkb-dm-g8Q" secondAttribute="trailing" id="22O-dL-HgQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vDq-NU-GJX" secondAttribute="bottom" constant="-232" id="PVi-Xe-wot"/>
+                            <constraint firstItem="vDq-NU-GJX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Plu-r9-tT3"/>
+                            <constraint firstItem="Hkb-dm-g8Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="U54-1C-gel"/>
+                            <constraint firstItem="Hkb-dm-g8Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="crE-dB-5NZ"/>
+                            <constraint firstAttribute="trailing" secondItem="vDq-NU-GJX" secondAttribute="trailing" id="fzK-sq-6L0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hkb-dm-g8Q" secondAttribute="bottom" id="j44-KU-8lo"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="EPl-HD-xsn"/>
+                    <connections>
+                        <outlet property="brushPreview" destination="dYE-Tu-fZQ" id="Dmz-gn-4mK"/>
+                        <outlet property="imageView" destination="Hkb-dm-g8Q" id="Fm1-Yk-NRr"/>
+                        <outlet property="settingsView" destination="vDq-NU-GJX" id="b8f-V1-LA3"/>
+                        <outlet property="settingsViewBottomConstraint" destination="PVi-Xe-wot" id="gm7-P2-tMP"/>
+                        <outlet property="slider" destination="sod-ct-fW3" id="QtH-Hr-85N"/>
+                        <outlet property="undoButton" destination="vDG-Dp-jSy" id="714-fT-Utp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1117" y="429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ILR-Y8-oiS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EnF-ke-5CQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yIh-VC-jxs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kSq-Yo-qb8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJ4-Mq-tR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Slice 1" width="233" height="233"/>
+    </resources>
 </document>

@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB22C0AB1CA39C1B0070120F /* BrushSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C0AA1CA39C1B0070120F /* BrushSizeView.swift */; };
+		DB2FB0CB1CBDC9DC00E1CB7A /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2FB0CA1CBDC9DC00E1CB7A /* Line.swift */; };
+		DB9F73451CA35C7F00F431C0 /* EraseCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F73441CA35C7F00F431C0 /* EraseCustomButton.swift */; };
 		DBCDBB131CA1B23700817F24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCDBB121CA1B23700817F24 /* AppDelegate.swift */; };
-		DBCDBB151CA1B23700817F24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCDBB141CA1B23700817F24 /* ViewController.swift */; };
+		DBCDBB151CA1B23700817F24 /* EaselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCDBB141CA1B23700817F24 /* EaselViewController.swift */; };
 		DBCDBB181CA1B23700817F24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCDBB161CA1B23700817F24 /* Main.storyboard */; };
 		DBCDBB1A1CA1B23700817F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCDBB191CA1B23700817F24 /* Assets.xcassets */; };
 		DBCDBB1D1CA1B23700817F24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCDBB1B1CA1B23700817F24 /* LaunchScreen.storyboard */; };
+		DBCDBB271CA1BBCB00817F24 /* CustomColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCDBB261CA1BBCB00817F24 /* CustomColorButton.swift */; };
+		DBF8EB461CA45A4A00F7147E /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8EB451CA45A4A00F7147E /* ColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB22C0AA1CA39C1B0070120F /* BrushSizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrushSizeView.swift; sourceTree = "<group>"; };
+		DB2FB0CA1CBDC9DC00E1CB7A /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		DB9F73441CA35C7F00F431C0 /* EraseCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EraseCustomButton.swift; path = ../EraseCustomButton.swift; sourceTree = "<group>"; };
 		DBCDBB0F1CA1B23700817F24 /* Easel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCDBB121CA1B23700817F24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBCDBB141CA1B23700817F24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBCDBB141CA1B23700817F24 /* EaselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaselViewController.swift; sourceTree = "<group>"; };
 		DBCDBB171CA1B23700817F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBCDBB191CA1B23700817F24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBCDBB1C1CA1B23700817F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBCDBB1E1CA1B23700817F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBCDBB261CA1BBCB00817F24 /* CustomColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColorButton.swift; sourceTree = "<group>"; };
+		DBF8EB451CA45A4A00F7147E /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				DBCDBB121CA1B23700817F24 /* AppDelegate.swift */,
-				DBCDBB141CA1B23700817F24 /* ViewController.swift */,
+				DBCDBB141CA1B23700817F24 /* EaselViewController.swift */,
+				DB2FB0CA1CBDC9DC00E1CB7A /* Line.swift */,
+				DB9F73441CA35C7F00F431C0 /* EraseCustomButton.swift */,
 				DBCDBB161CA1B23700817F24 /* Main.storyboard */,
+				DBF8EB451CA45A4A00F7147E /* ColorExtensions.swift */,
+				DB22C0AA1CA39C1B0070120F /* BrushSizeView.swift */,
 				DBCDBB191CA1B23700817F24 /* Assets.xcassets */,
 				DBCDBB1B1CA1B23700817F24 /* LaunchScreen.storyboard */,
 				DBCDBB1E1CA1B23700817F24 /* Info.plist */,
+				DBCDBB261CA1BBCB00817F24 /* CustomColorButton.swift */,
 			);
 			path = Easel;
 			sourceTree = "<group>";
@@ -135,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBCDBB151CA1B23700817F24 /* ViewController.swift in Sources */,
+				DB22C0AB1CA39C1B0070120F /* BrushSizeView.swift in Sources */,
+				DBCDBB271CA1BBCB00817F24 /* CustomColorButton.swift in Sources */,
+				DBCDBB151CA1B23700817F24 /* EaselViewController.swift in Sources */,
 				DBCDBB131CA1B23700817F24 /* AppDelegate.swift in Sources */,
+				DB9F73451CA35C7F00F431C0 /* EraseCustomButton.swift in Sources */,
+				DB2FB0CB1CBDC9DC00E1CB7A /* Line.swift in Sources */,
+				DBF8EB461CA45A4A00F7147E /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +269,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Easel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Easel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orioncode.easel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -260,7 +280,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Easel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Easel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orioncode.easel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -284,6 +304,7 @@
 				DBCDBB231CA1B23700817F24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
