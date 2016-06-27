@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EnF-ke-5CQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EnF-ke-5CQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -278,7 +278,7 @@
                                         </connections>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="cxe-m1-VCA">
-                                        <rect key="frame" x="60" y="10" width="480" height="40"/>
+                                        <rect key="frame" x="10" y="10" width="580" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDG-Dp-jSy" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -294,7 +294,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRQ-uY-B1C" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
-                                                <rect key="frame" x="110" y="0.0" width="40" height="40"/>
+                                                <rect key="frame" x="135" y="0.0" width="40" height="40"/>
                                                 <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="gAA-Lm-duk"/>
@@ -307,7 +307,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r9-KP-8AL" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
-                                                <rect key="frame" x="220" y="0.0" width="40" height="40"/>
+                                                <rect key="frame" x="270" y="0.0" width="40" height="40"/>
                                                 <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="fxO-FB-VOg"/>
@@ -320,7 +320,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ph1-Pf-0fO" customClass="EraseCustomButton" customModule="Easel" customModuleProvider="target">
-                                                <rect key="frame" x="330" y="0.0" width="40" height="40"/>
+                                                <rect key="frame" x="405" y="0.0" width="40" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="white"/>
                                                 <constraints>
@@ -335,11 +335,11 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZS-dx-Irr" customClass="CustomColorButton" customModule="Easel" customModuleProvider="target">
-                                                <rect key="frame" x="440" y="0.0" width="40" height="40"/>
+                                                <rect key="frame" x="540" y="0.0" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="s75-l0-mZB"/>
                                                 </constraints>
-                                                <state key="normal" image="Slice 1"/>
+                                                <state key="normal" image="settings"/>
                                                 <connections>
                                                     <action selector="settingsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVW-ai-HJS"/>
                                                 </connections>
@@ -388,12 +388,13 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="mLj-aq-uka" firstAttribute="leading" secondItem="vDq-NU-GJX" secondAttribute="leading" constant="15" id="3XX-bi-0e1"/>
-                                    <constraint firstItem="cxe-m1-VCA" firstAttribute="leading" secondItem="vDq-NU-GJX" secondAttribute="leading" constant="60" id="6mM-k8-QVE"/>
+                                    <constraint firstAttribute="trailing" secondItem="cxe-m1-VCA" secondAttribute="trailing" constant="10" id="FrF-BJ-d0f"/>
                                     <constraint firstAttribute="trailing" secondItem="x1Y-1n-yOp" secondAttribute="trailing" constant="30" id="H3k-ut-o80"/>
                                     <constraint firstItem="x1Y-1n-yOp" firstAttribute="top" secondItem="cxe-m1-VCA" secondAttribute="bottom" constant="8" id="IeX-Wj-h9h"/>
                                     <constraint firstAttribute="bottom" secondItem="sAy-os-EiR" secondAttribute="bottom" constant="10" id="KGG-bM-S0F"/>
                                     <constraint firstItem="mLj-aq-uka" firstAttribute="top" secondItem="748-51-Mnd" secondAttribute="bottom" constant="8" id="MBK-Fo-ShT"/>
                                     <constraint firstItem="sod-ct-fW3" firstAttribute="leading" secondItem="vDq-NU-GJX" secondAttribute="leading" constant="15" id="PjC-5q-1fl"/>
+                                    <constraint firstItem="cxe-m1-VCA" firstAttribute="leading" secondItem="vDq-NU-GJX" secondAttribute="leading" constant="10" id="RBA-i6-K4D"/>
                                     <constraint firstAttribute="trailing" secondItem="mLj-aq-uka" secondAttribute="trailing" constant="15" id="SAn-w9-cvN"/>
                                     <constraint firstItem="cxe-m1-VCA" firstAttribute="top" secondItem="vDq-NU-GJX" secondAttribute="top" constant="10" id="Ua8-0F-xad"/>
                                     <constraint firstItem="748-51-Mnd" firstAttribute="top" secondItem="dYE-Tu-fZQ" secondAttribute="bottom" constant="8" id="XT1-6O-uWZ"/>
@@ -405,7 +406,6 @@
                                     <constraint firstAttribute="trailing" secondItem="dYE-Tu-fZQ" secondAttribute="trailing" constant="35" id="nlt-dC-wFv"/>
                                     <constraint firstItem="sAy-os-EiR" firstAttribute="leading" secondItem="vDq-NU-GJX" secondAttribute="leading" constant="15" id="pMX-5M-t4Z"/>
                                     <constraint firstItem="sAy-os-EiR" firstAttribute="top" secondItem="mLj-aq-uka" secondAttribute="bottom" constant="8" id="pqq-mx-LIa"/>
-                                    <constraint firstAttribute="trailing" secondItem="cxe-m1-VCA" secondAttribute="trailing" constant="60" id="wBn-CU-UD8"/>
                                     <constraint firstAttribute="trailing" secondItem="sAy-os-EiR" secondAttribute="trailing" constant="15" id="xuV-zT-M2F"/>
                                     <constraint firstItem="748-51-Mnd" firstAttribute="top" secondItem="sod-ct-fW3" secondAttribute="bottom" constant="12" id="y2F-i5-kKB"/>
                                     <constraint firstItem="748-51-Mnd" firstAttribute="leading" secondItem="vDq-NU-GJX" secondAttribute="leading" constant="15" id="ywz-hB-lyz"/>
@@ -457,6 +457,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Slice 1" width="233" height="233"/>
+        <image name="settings" width="233" height="233"/>
     </resources>
 </document>
